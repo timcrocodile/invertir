@@ -14,7 +14,7 @@ const InfoItem = (props: { data: infoType }) => {
   };
 
   return (
-    <div className="cursor-pointer ">
+    <div>
       <AnimationOnScroll
         animateIn="animate__fadeInUp"
         animateOnce={true}
@@ -23,7 +23,7 @@ const InfoItem = (props: { data: infoType }) => {
       >
         <div className="flex justify-between items-baseline accordion-item ">
           <h3
-            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-2xl h-[120px]  ${
+            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-2xl h-[120px] cursor-pointer  ${
               showInfo && "h-[80px]"
             }`}
             onClick={onHandleShowInfo}
@@ -33,7 +33,7 @@ const InfoItem = (props: { data: infoType }) => {
           </h3>
           <div className="px-4" onClick={onHandleShowInfo}>
             <SlArrowDown
-              className={`text-xl transition-all   "  ${
+              className={`text-xl transition-all cursor-pointer  "  ${
                 showInfo && "rotate-180 "
               } `}
             />

@@ -6,6 +6,12 @@ import { AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
 
 const Footer = () => {
+  const linkTo = (url: string): any => {
+    if (typeof window !== "undefined") {
+      window.open(url, "_blank");
+    }
+  };
+
   return (
     <div
       className=" bg-first text-white p-10 flex flex-col items-center gap-9 md:h-[250px] md:justify-between  "
@@ -23,22 +29,29 @@ const Footer = () => {
             <h3>SOCIAL</h3>
             <ul className="flex gap-5 text-2xl  ">
               <li className="hover:text-gray ">
-                <Link href="" target="_blank">
+                <button
+                  onClick={() =>
+                    linkTo("https://www.linkedin.com/in/fabio-massi-7b755112a/")
+                  }
+                >
                   <AiFillLinkedin />
-                </Link>
+                </button>
               </li>
               <li className="hover:text-gray">
-                <Link href="mailto:cfautonomo@proton.me" target="_blank">
+                <button onClick={() => linkTo("mailto:cfautonomo@proton.me")}>
                   <SiGmail />
-                </Link>
+                </button>
               </li>
               <li className="hover:text-gray">
-                <Link
-                  href="https://wa.me/393518424799/?text=Ciao Fabio, quando sarebbe possibile prenotare una consulenza?"
-                  target="_blank"
+                <button
+                  onClick={() =>
+                    linkTo(
+                      "https://wa.me/393518424799/?text=Ciao Fabio, quando sarebbe possibile prenotare una consulenza?"
+                    )
+                  }
                 >
                   <IoLogoWhatsapp />
-                </Link>
+                </button>
               </li>
             </ul>
           </div>
@@ -50,9 +63,12 @@ const Footer = () => {
           </div>
           <div className="flex flex-col  items-center  gap-2">
             <h3> RECAPITI TELEFONICI</h3>
-            <Link className="text-zinc-400" href="tel:+393518424799">
+            <button
+              className="text-zinc-400"
+              onClick={() => linkTo("tel:+393518424799")}
+            >
               Cellulare: +39 3518424799
-            </Link>
+            </button>
           </div>
         </div>
         <div className="text-[14px] w-screen flex flex-col px-8 items-center mt-10 md:px-0 md:text-base md:mt-16 text-center">

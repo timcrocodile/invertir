@@ -9,7 +9,7 @@ export const faq: faqType[] = [
     id: 1,
     question: "Che cos'è Invertir ? ",
     answer:
-      "Invertir è il servizio di consulenza finanziaria indipendente di Fabio Massi (il consulente finanziario indipendente)",
+      "Invertir è il servizio di consulenza finanziaria indipendente di Fabio Massi (il Consulente Finanziario Indipendente).",
   },
   {
     id: 2,

@@ -11,11 +11,17 @@ const Hero = () => {
           playsInline
           className="absolute w-full h-full object-cover bg-fixed object-right"
         >
-          <source src="./video/hero.mp4" type="video/mp4" />
-          <source src="./video/hero.mp4" type="video/webm" />
+          <source
+            src="https://invertirbucket.s3.eu-central-1.amazonaws.com/hero.mp4"
+            type="video/mp4"
+          />
+          <source
+            src="https://invertirbucket.s3.eu-central-1.amazonaws.com/hero.mp4"
+            type="video/webm"
+          />
         </video>
       </div>
-      <h2 className="z-10 self-end mb-8 text-6xl text-white  p-10 md:mb-20 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
+      <h2 className="z-10 self-end mb-16 text-5xl text-center md:text-6xl text-white  p-10 md:mb-20 [text-shadow:_0_1px_0_rgb(0_0_0_/_40%)]">
         La consulenza finanziaria libera ed indipendente
       </h2>
     </div>

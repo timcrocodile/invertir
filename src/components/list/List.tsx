@@ -57,7 +57,7 @@ const List = (props: {
       </li>
       <li className="cursor-pointer">
         <hr className="w-[95vw] p-1 md:hidden" />
-        <div className="" onClick={onHandleChangeStatus}>
+        <div onClick={onHandleChangeStatus}>
           <div className=" flex  justify-between items-baseline hover:text-gray  md:w-[88px] ">
             <a className="md:hover:underline underline-offset-8 relative cursor-pointer">
               Servizi
@@ -77,13 +77,13 @@ const List = (props: {
             />
           </div>
           <ul
-            className={` text-lg flex flex-col items-start gap-1 mt-2 ml-4 transition-all md:items-start md:absolute md:text-xl md:ml-0   ${
+            className={` text-lg flex flex-col items-start gap-1 mt-2 ml-4 transition-all md:items-start md:absolute md:text-xl md:ml-0    ${
               !showSubtitle && " hidden  "
-            } ${scroll > 80 && "md:bg-first md:p-2 mdrounded"}`}
+            } ${scroll > 80 && "md:bg-first md:p-3 md:rounded"}`}
           >
             <li onClick={someFunction}>
               <a
-                className="md:md:hover:underline underline-offset-8 relative z-30 hover:text-gray "
+                className="md:hover:underline underline-offset-8 relative z-30 hover:text-gray  "
                 onClick={(e) => onClickAbout(e, "analisi")}
               >
                 Area analisi

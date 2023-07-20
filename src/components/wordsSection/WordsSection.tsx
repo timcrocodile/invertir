@@ -31,6 +31,7 @@ const WordsSection = () => {
             {words.map((word) => {
               return (
                 <li
+                  key={word.id}
                   className={` w-[80%]  ${
                     selected !== word.title && " hidden"
                   }`}
