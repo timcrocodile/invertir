@@ -4,14 +4,9 @@ import "animate.css";
 import { IoLogoWhatsapp } from "react-icons/io";
 import { AiFillLinkedin } from "react-icons/ai";
 import { SiGmail } from "react-icons/si";
+import { linkTo } from "@/utils/func";
 
 const Footer = () => {
-  const linkTo = (url: string): any => {
-    if (typeof window !== "undefined") {
-      window.open(url, "_blank");
-    }
-  };
-
   return (
     <div
       className=" bg-first text-white p-10 flex flex-col items-center gap-9 md:h-[250px] md:justify-between  "
@@ -31,14 +26,21 @@ const Footer = () => {
               <li className="hover:text-gray ">
                 <button
                   onClick={() =>
-                    linkTo("https://www.linkedin.com/in/fabio-massi-7b755112a/")
+                    linkTo(
+                      "https://www.linkedin.com/in/fabio-massi-7b755112a/",
+                      "_blank"
+                    )
                   }
                 >
                   <AiFillLinkedin />
                 </button>
               </li>
               <li className="hover:text-gray">
-                <button onClick={() => linkTo("mailto:cfautonomo@proton.me")}>
+                <button
+                  onClick={() =>
+                    linkTo("mailto:cfautonomo@proton.me", "_blank")
+                  }
+                >
                   <SiGmail />
                 </button>
               </li>
@@ -46,7 +48,8 @@ const Footer = () => {
                 <button
                   onClick={() =>
                     linkTo(
-                      "https://wa.me/393518424799/?text=Ciao Fabio, quando sarebbe possibile prenotare una consulenza?"
+                      "https://wa.me/393518424799/?text=Ciao Fabio, quando sarebbe possibile prenotare una consulenza?",
+                      "_blank"
                     )
                   }
                 >
@@ -65,7 +68,7 @@ const Footer = () => {
             <h3> RECAPITI TELEFONICI</h3>
             <button
               className="text-zinc-400"
-              onClick={() => linkTo("tel:+393518424799")}
+              onClick={() => linkTo("tel:+393518424799", "_self")}
             >
               Cellulare: +39 3518424799
             </button>

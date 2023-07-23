@@ -4,3 +4,9 @@ export const onClickAbout = (e: any, anchor: string): void => {
   scrolling = document.getElementById(anchor);
   scrolling.scrollIntoView();
 };
+
+export const linkTo = (url: string, isNewTab: string): any => {
+  if (typeof window !== "undefined") {
+    window.open(url, isNewTab);
+  }
+};

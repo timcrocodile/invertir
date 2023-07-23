@@ -7,14 +7,14 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Invertir di Fabio Massi</title>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <meta charSet="utf-8" />
         <meta name="author" content="Salvatore Bisconti" />
         <meta httpEquiv="Reply-to" content="salvatorebisconti98@gmail.com" />
         <meta httpEquiv="content-language" content="IT" />
         <meta
           name="keywords"
-          content="Fabio Massi, Civitanova Marche, Consulente finanziario, Invertir di Fabio Massi, consulenza, consulente finanziario a civitanova, consulenza finanziaria "
+          content="Fabio Massi, Civitanova Marche, Consulente finanziario, Invertir di Fabio Massi, consulenza, consulente finanziario a civitanova, consulenza finanziaria, invertir Fabio Massi, civitanova marche consulente finanziario, consultente finanziario marche  "
         />
         <meta
           name="description"
@@ -26,6 +26,7 @@ export default function App({ Component, pageProps }: AppProps) {
           content="Invertir di Fabio Massi - Consulente finanziario indipendente"
         />
         <meta name="robots" content="index,nofollow" />
+        <meta name="theme-color" content="#28282B" />
       </Head>
       <Component {...pageProps} />
     </>
