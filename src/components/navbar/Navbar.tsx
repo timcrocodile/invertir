@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import List from "../list";
 import Hamburger from "../hamburger";
+import { onClickAbout } from "@/utils/func";
 
 const Navbar = () => {
   const [openMenu, setOpenMenu] = useState<boolean>(false);
@@ -32,7 +33,8 @@ const Navbar = () => {
       <img
         src="/logo.png"
         alt="invertir.fm di Fabio Massi logo"
-        className="w-[105px]"
+        className="w-[105px] cursor-pointer"
+        onClick={(e) => onClickAbout(e, "home")}
       />
       <button className="group md:hidden z-30 " onClick={onHandleClick}>
         <div className="relative flex overflow-hidden items-center justify-center rounded-full w-[48px] h-[48px] transform transition-all bg-first  ring-0 ring-gray-300 hover:ring-4  duration-200 shadow-md ring-gray ">
