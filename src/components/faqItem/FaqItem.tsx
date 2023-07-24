@@ -13,7 +13,7 @@ const FaqItem = (props: { data: faqType }) => {
   };
 
   return (
-    <div>
+    <div id={data.anchor}>
       <AnimationOnScroll
         animateIn="animate__fadeInUp"
         animateOnce={true}
