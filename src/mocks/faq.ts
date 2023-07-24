@@ -57,4 +57,16 @@ export const faq: faqType[] = [
     answer:
       "Per quanto riguarda la sicurezza dello storage dei dati sensibili ( privacy, dati anagrafici, dati sugli investimenti ) che vengono comunicati al consulente finanziario autonomo, le procedure sono le medesime che vengono utilizzate dai grandi intermediari finanziari ( pena cancellazione dall'albo )  e così anche il software per lo storage dei dati sarà identico. ad esempio io utilizzo il software di Analysis, azienda leader del settore in Italia con 30 anni di esperienza e più di 250 compagnie come clienti.",
   },
+  {
+    id: 9,
+    question: "Perchè Libera?",
+    answer:
+      " Perchè possiamo scegliere fra tutte le asset class disponibili sul mercato",
+  },
+  {
+    id: 10,
+    question: "Perchè indipendente?",
+    answer:
+      " Perchè essendo Consulente Finanziario Autonomo non c'è nessuna Banca , Compagnia di Assicurazione, o Società di Intermediazione che mi paga ( incentivi, provvigioni, bonus .. ecc.. ) per consigliare o vendere determinati strumenti finanziari",
+  },
 ];
