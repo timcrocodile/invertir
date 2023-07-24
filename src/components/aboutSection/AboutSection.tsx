@@ -16,33 +16,34 @@ const AboutSection = () => {
             {" "}
             Chi sono ?
           </h3>
-          <p>
+          <p className="text-justify">
             Sono Fabio Massi, classe 88, da sempre appassionato di mercati
             finanziari ed innovazioni, la mia famiglia si occupa da oltre 40
             anni di consulenza assicurativa e finanziaria a privati ed aziende,
             ed è grazie a questa esperienza accumulata negli anni che sono
-            diventato Broker assicurativo prima, e Consulente Finanziario
+            diventato Broker assicurativo prima, e consulente finanziario
             Indipendente adesso. Conosco bene le dinamiche che stanno dietro la
             consulenza e la vendita di prodotti finanziari e se ho fatto la
-            scelta di essere Consulente Fin. Indipendente è proprio per offrire
-            ai miei clienti un'Indipendenza del Servizio ma soprattutto un'
-            Indipendenza del Soggetto.
+            scelta di essere consulente finanziario indipendente è proprio per
+            offrire ai miei clienti un'Indipendenza del servizio ma soprattutto
+            un' indipendenza del soggetto.
           </p>
 
           <h3 className="font-bold mt-5"> Percorso di studi:</h3>
-          <ul className="md:flex justify-between ">
-            <li>
-              <Image
-                src="/images/graduated.png"
-                className="inline mr-2"
-                width={35}
-                height={35}
-                alt="Laurea"
-              />
-              L. Economia Bancaria Finanziaria ed Assicurativa
+          <ul className="md:flex justify-between text-justify ">
+            <li className="flex gap-2 ">
+              <div>
+                <Image
+                  src="/images/graduated.png"
+                  className=" mr-2 mt-1 "
+                  width={35}
+                  height={35}
+                  alt="Laurea"
+                />
+              </div>
+              L. Economia bancaria finanziaria ed assicurativa
             </li>
             <li>
-              {" "}
               <Image
                 src="/images/graduated.png"
                 className="inline mr-2"
@@ -50,7 +51,7 @@ const AboutSection = () => {
                 height={35}
                 alt="Laurea"
               />
-              LM. Economia e Management
+              LM. Economia e management
             </li>
           </ul>
           <img
