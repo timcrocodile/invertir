@@ -7,7 +7,7 @@ export default function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>Invertir di Fabio Massi</title>
-        <link rel="icon" type="image/x-icon" href="favicon.ico" />
+        <link rel="icon" type="image/x-icon" href="/favicon.ico" />
         <meta charSet="utf-8" />
         <meta name="author" content="Salvatore Bisconti" />
         <meta httpEquiv="Reply-to" content="salvatorebisconti98@gmail.com" />
