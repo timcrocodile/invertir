@@ -20,19 +20,21 @@ const FaqItem = (props: { data: faqType }) => {
         duration={1.5}
         animatePreScroll={false}
       >
-        <div className="flex justify-between items-baseline accordion-item ">
+        <div
+          className="flex justify-between items-baseline accordion-item cursor-pointer "
+          onClick={onHandleShow}
+        >
           <h3
-            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-2xl  h-[140px] cursor-pointer  ${
+            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-2xl  h-[140px]    ${
               showQuestion && "h-[100px]"
             }`}
-            onClick={onHandleShow}
           >
             {data.question}
             <span className="-ml-4 text-xs mr-3 text-gray ">♦︎</span>
           </h3>
-          <div className="px-4" onClick={onHandleShow}>
+          <div className="px-4">
             <SlArrowDown
-              className={`text-xl transition-all cursor-pointer  "  ${
+              className={`text-xl transition-all"  ${
                 showQuestion && "rotate-180 "
               } `}
             />

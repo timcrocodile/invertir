@@ -76,7 +76,8 @@ const Footer = () => {
         </div>
         <div className="text-[14px] w-screen flex flex-col px-8 items-center mt-10 md:px-0 md:text-base md:mt-16 text-center">
           <p>
-            Copyright © 2023 | All rights reserved | Fabio Massi P.IVA: 4747494
+            Copyright © 2023 | Tutti i diritti riservati | Fabio Massi P.IVA:
+            4747494
           </p>
           <ul className="flex gap-2 ">
             <li className="hover:text-gray">

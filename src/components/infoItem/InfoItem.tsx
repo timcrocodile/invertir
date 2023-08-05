@@ -21,19 +21,21 @@ const InfoItem = (props: { data: infoType }) => {
         duration={1.5}
         animatePreScroll={false}
       >
-        <div className="flex justify-between items-baseline accordion-item ">
+        <div
+          className="flex justify-between items-baseline accordion-item cursor-pointer "
+          onClick={onHandleShowInfo}
+        >
           <h3
-            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-2xl h-[120px] cursor-pointer  ${
+            className={`flex flex-row-reverse items-center font-bold accordion-header md:text-2xl h-[120px] ${
               showInfo && "h-[80px]"
             }`}
-            onClick={onHandleShowInfo}
           >
             {data.title}
             <span className="-ml-4 text-xs mr-3 text-gray ">♦︎</span>
           </h3>
-          <div className="px-4" onClick={onHandleShowInfo}>
+          <div className="px-4">
             <SlArrowDown
-              className={`text-xl transition-all cursor-pointer  "  ${
+              className={`text-xl transition-all"  ${
                 showInfo && "rotate-180 "
               } `}
             />
