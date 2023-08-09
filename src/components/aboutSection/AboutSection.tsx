@@ -3,6 +3,11 @@ import "animate.css";
 import Image from "next/image";
 
 const AboutSection = () => {
+  const degreeText = [
+    " L. Economia bancaria finanziaria ed assicurativa",
+    "LM. Economia e management",
+  ];
+
   return (
     <div className="setPage bg-second  " id="chiSono">
       <AnimationOnScroll
@@ -31,33 +36,27 @@ const AboutSection = () => {
 
           <h3 className="font-bold mt-5"> Percorso di studi:</h3>
           <ul className="md:flex justify-between text-justify ">
-            <li className="flex gap-2 ">
-              <div>
-                <Image
-                  src="/images/graduated.png"
-                  className=" mr-2 mt-1 "
-                  width={35}
-                  height={35}
-                  alt="Laurea"
-                />
-              </div>
-              L. Economia bancaria finanziaria ed assicurativa
-            </li>
-            <li>
-              <Image
-                src="/images/graduated.png"
-                className="inline mr-2"
-                width={35}
-                height={35}
-                alt="Laurea"
-              />
-              LM. Economia e management
-            </li>
+            {degreeText.map((element) => {
+              return (
+                <li className="flex gap-2 text-start">
+                  <div className="flex items-center">
+                    <Image
+                      src="/images/graduated.png"
+                      className=" mr-2 mt-1 w-[42px] h-[30px]"
+                      width={35}
+                      height={35}
+                      alt="Laurea"
+                    />
+                    <p> {element}</p>
+                  </div>
+                </li>
+              );
+            })}
           </ul>
           <img
             src="/profile.png"
             alt="Fabio Massi consulente finanziario"
-            className="absolute -right-20 md:-right-80  bottom-2 md:-bottom-12 w-[400px] md:w-[450px] brightness-0 invert -z-10 "
+            className="absolute -right-20 md:-right-80  bottom-8 md:-bottom-12 w-[400px] md:w-[450px] brightness-0 invert -z-10 "
           />
         </div>
       </AnimationOnScroll>
