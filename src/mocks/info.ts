@@ -31,31 +31,31 @@ export const info: infoType[] = [
         text: [
           {
             id: 1,
-            text: "Nome e Cognome: ",
+            text: "Nome e Cognome: Fabio Massi",
           },
           {
             id: 2,
-            text: "Domicilio: ",
+            text: "Domicilio: via Oroboni 109, civitanova marche (mc) ",
           },
           {
             id: 3,
-            text: "Sito web: ",
+            text: "Sito web: https://www.invertir.fm/ ",
           },
           {
             id: 4,
-            text: "Email: ",
+            text: "Email: massifabio88@gmail.com ",
           },
           {
             id: 5,
-            text: "PEC: ",
+            text: "PEC: fabiomassi@peceasy.it ",
           },
           {
             id: 6,
-            text: "Telefono e telefax: ",
+            text: "Telefono e telefax: 0039 3518424799 ",
           },
           {
             id: 7,
-            text: "Iscritto con delibera n. del nella sezione CFA dell’Albo unico dei consulenti finanziari ",
+            text: "Iscritto con delibera  OCF n. 2336 del 08/11/2023 con matricola n. 633430. del nella sezione CFA dell’Albo unico dei consulenti finanziari ",
           },
         ],
       },
