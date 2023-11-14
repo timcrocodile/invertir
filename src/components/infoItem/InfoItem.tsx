@@ -2,6 +2,8 @@ import { infoType } from "@/mocks/info";
 import { SlArrowDown } from "react-icons/sl";
 import { Key, useState } from "react";
 import { AnimationOnScroll } from "react-animation-on-scroll";
+import React, { Fragment } from "react";
+import Parser from "html-react-parser";
 import "animate.css";
 
 const InfoItem = (props: { data: infoType }) => {
@@ -46,29 +48,33 @@ const InfoItem = (props: { data: infoType }) => {
             !showInfo && "hidden"
           }`}
         >
-          <div className="h-auto  border-l-4 border-gray "> </div>
-          <p>{data.content} </p>
-          <ul className="list-decimal">
-            {data.subContent &&
-              data.subContent.map((item) => {
-                return (
-                  <li key={item.id} className="pb-4 ">
-                    <h3 className="font-bold w-[100%] inline">{item.title}</h3>
-                    <p>{item.subTitle}</p>
-                    <ul className="flex flex-col list-square ml-5">
-                      {item.text &&
-                        item.text.map((item: any) => {
-                          return (
-                            <li key={item.id} className="pb-4 ">
-                              {item.text}
-                            </li>
-                          );
-                        })}
-                    </ul>
-                  </li>
-                );
-              })}
-          </ul>
+          <Fragment>
+            <div className="h-auto  border-l-4 border-gray "> </div>
+            <p>{Parser(data.content)} </p>
+            <ul className="list-decimal">
+              {data.subContent &&
+                data.subContent.map((item) => {
+                  return (
+                    <li key={item.id} className="pb-4 ">
+                      <h3 className="font-bold w-[100%] inline">
+                        {item.title}
+                      </h3>
+                      <p>{item.subTitle}</p>
+                      <ul className="flex flex-col list-square ml-5">
+                        {item.text &&
+                          item.text.map((item: any) => {
+                            return (
+                              <li key={item.id} className="pb-4 ">
+                                {item.text}
+                              </li>
+                            );
+                          })}
+                      </ul>
+                    </li>
+                  );
+                })}
+            </ul>
+          </Fragment>
         </div>
         <hr className="text-gray mt-2" />
       </AnimationOnScroll>
