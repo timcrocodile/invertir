@@ -43,7 +43,7 @@ export const info: infoType[] = [
           },
           {
             id: 4,
-            text: "Email: cfautonomo@protn.me ",
+            text: "Email: cfautonomo@proton.me ",
           },
           {
             id: 5,
