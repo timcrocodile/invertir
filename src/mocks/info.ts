@@ -31,31 +31,31 @@ export const info: infoType[] = [
         text: [
           {
             id: 1,
-            text: "Nome e Cognome: ",
+            text: "Nome e Cognome: Fabio Massi ",
           },
           {
             id: 2,
-            text: "Domicilio: ",
+            text: "Domicilio: via Oroboni 109 - Civitanova Marche (MC) ",
           },
           {
             id: 3,
-            text: "Sito web: ",
+            text: "Sito web: www.invertir.fm ",
           },
           {
             id: 4,
-            text: "Email: ",
+            text: "Email: cfautonomo@protn.me ",
           },
           {
             id: 5,
-            text: "PEC: ",
+            text: "PEC: fabiomassi@peceasy.it ",
           },
           {
             id: 6,
-            text: "Telefono e telefax: ",
+            text: "Telefono e telefax: +39 3518424799 ",
           },
           {
             id: 7,
-            text: "Iscritto con delibera n. del nella sezione CFA dell’Albo unico dei consulenti finanziari ",
+            text: "Iscritto con delibera n. 2336 del 8/11/2023 nella sezione CFA dell’Albo unico dei consulenti finanziari ",
           },
         ],
       },
@@ -78,7 +78,7 @@ export const info: infoType[] = [
         title:
           " Iscrizione nell'albo previsto dall' art. 18 bis del decreto legislativo 24.2.1998, n. 58",
         subTitle:
-          "Si dichiara che il CONSULENTE è iscritto nella sezione dell’albo di cui all’art. 18 bis del Decreto Legislativo 24.2.1998 (TUF) tenuto dall’Organismo di Vigilanza previsto dall’art. 31, comma 4 del suddetto Decreto, con delibera del………………n……………….. Il nome e l’indirizzo di contatto dell’Organismo sono:……",
+          "Si dichiara che il CONSULENTE è iscritto nella sezione dell’albo di cui all’art. 18 bis del Decreto Legislativo 24.2.1998 (TUF) tenuto dall’Organismo di Vigilanza previsto dall’art. 31, comma 4 del suddetto Decreto, con delibera del 8/11/2023 n.2336. Il nome e l’indirizzo di contatto dell’Organismo sono:……",
         text: null,
       },
       {
@@ -214,7 +214,7 @@ export const info: infoType[] = [
   },
   {
     id: 3,
-    title: "Arbitrio per le controversie finanziarie",
+    title: "Arbitro per le controversie finanziarie",
     content: `Il Cliente può presentare ricorso all’Arbitro per le Controversie Finanziarie (ACF), istituito presso la CONSOB, per la risoluzione extragiudiziale delle controversie tra investitori (diversi dai clienti professionali) e i consulenti finanziari autonomi e le società di consulenza finanziaria di cui, rispettivamente, agli articoli 18-bis e 18-ter del TUF, , relative alla violazione da parte di questi ultimi degli obblighi di diligenza, correttezza, informazione e trasparenza nell’esercizio dell’attività disciplinata dalla Parte II del TUF, incluse le controversie oggetto del Regolamento (UE) n. 524/2013. Non rientrano nell’ambito dell’operatività dell’Arbitro le controversie che implicano la richiesta di somme di denaro per un importo superiore a Euro cinquecentomila. Sono esclusi dalla cognizione dell’Arbitro i danni che non sono conseguenza immediata e diretta dell’inadempimento o della violazione da parte dell’intermediario degli obblighi sopra descritti e quelli che non hanno natura patrimoniale. Il diritto di ricorrere all’ACF è irrinunciabile e sempre esercitabile anche in presenza di clausole di devoluzione delle controversie ad altri organismi di risoluzione extragiudiziale contenute nel contratto. Per maggiori informazioni fare riferimento al sito internet <a className= " underline hover:text-gray " href='https://www.acf.consob.it/'>ACF</a>`,
     subContent: null,
   },
