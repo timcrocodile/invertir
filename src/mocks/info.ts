@@ -78,7 +78,8 @@ export const info: infoType[] = [
         title:
           " Iscrizione nell'albo previsto dall' art. 18 bis del decreto legislativo 24.2.1998, n. 58",
         subTitle:
-          "Si dichiara che il CONSULENTE è iscritto nella sezione dell’albo di cui all’art. 18 bis del Decreto Legislativo 24.2.1998 (TUF) tenuto dall’Organismo di Vigilanza previsto dall’art. 31, comma 4 del suddetto Decreto, con delibera del 8/11/2023 n.2336. Il nome e l’indirizzo di contatto dell’Organismo sono:……",
+          "Si dichiara che il CONSULENTE è iscritto nella sezione dell’albo di cui all’art. 18 bis del Decreto Legislativo 24.2.1998 (TUF) tenuto dall’Organismo di Vigilanza previsto dall’art. 31, comma 4 del suddetto Decreto, con delibera del 8/11/2023 n.2336. L’Organismo di Vigilanza e tenuta dell’Albo unico dei Consulenti Finanziari ha sede in Via Tomacelli
+          146, Roma; sito web www.organismocf.it . ",
         text: null,
       },
       {
